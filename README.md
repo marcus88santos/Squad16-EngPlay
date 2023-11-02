@@ -25,7 +25,7 @@ Welcome to our Job Search Website! This project was built using the core Web Tec
 Clone the project repository running in your terminal:
 
 ```
-git clone https://github.com/marcus88santos/Squad16-EngPlay.git
+git clone https://github.com/marcus88santos/squad16-engplay.git
 ```
 <br>
 
