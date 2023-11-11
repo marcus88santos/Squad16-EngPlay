@@ -1,9 +1,9 @@
-
+import Header from "@/commom/components/header";
 
 export default function Home() {
   return (
-    <main>
-      <h1>Olá Mundo!</h1>
+    <main >
+      <Header layout="1" text="Clique Aqui" size="small"/>
     </main>
   );
 }
