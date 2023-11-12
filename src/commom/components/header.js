@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Header() {
   return (
-    <header className="bg-azul-escuro flex text-white py-2 p-16 justify-between items-center sticky top-0 z-20 font-semibold">
+    <header className="bg-azul-escuro flex text-white py-1 p-16 justify-between items-center sticky top-0 z-20 font-semibold">
       <Image
         width="170"
         height="70"
