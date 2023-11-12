@@ -7,10 +7,17 @@ module.exports = {
     "./src/commom/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    colors: {
-      "azul-escuro": "#0A103F",
-      'vermelho-diferente': "#C13636"
-    },
+    extend:{
+      colors: {
+        "azul-escuro": "#0A103F",
+        'vermelho-diferente': "#C13636"
+      },
+    }
   },
-  plugins: [],
+  plugins: [
+    function ({ addVariant }) {
+      addVariant('child', '& > *');
+      addVariant('child-hover', '& > *:hover');
+  }
+  ],
 };
