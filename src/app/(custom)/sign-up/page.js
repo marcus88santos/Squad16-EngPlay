@@ -1,6 +1,6 @@
 import Link from "next/link";
 import InputSignInUp from "../../../commom/components/input-sign-in-up";
-import Btn from "@/commom/components/btn";
+import Btn from "../../../commom/components/btn";
 
 export default function SignUp() {
   return (
