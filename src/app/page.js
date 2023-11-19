@@ -1,10 +1,9 @@
-import Header from "@/commom/components/header";
+import Login from "./login";
 
 export default function Home() {
   return (
-    <main >
-      <Header />
-
+    <main>
+      <Login />
     </main>
   );
 }
