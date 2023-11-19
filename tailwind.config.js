@@ -7,17 +7,20 @@ module.exports = {
     "./src/commom/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend:{
+    extend: {
       colors: {
         "azul-escuro": "#0A103F",
-        'vermelho-diferente': "#C13636"
+        "azul-ciano": "#2DC0C7",
+        "vermelho-diferente": "#C13636",
+        "cinza": "#9F9898",
+        "cinza-claro": "#CFD1D7"
       },
-    }
+    },
   },
   plugins: [
     function ({ addVariant }) {
-      addVariant('child', '& > *');
-      addVariant('child-hover', '& > *:hover');
-  }
+      addVariant("child", "& > *");
+      addVariant("child-hover", "& > *:hover");
+    },
   ],
 };
