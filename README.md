@@ -13,7 +13,7 @@ Welcome to our Job Search Website! This project was built using the core Web Tec
 <br>
 
 ```
-https://marcus88santos.github.io/squad16-engplay/
+https://squad16-engplay.vercel.app/
 ```
 
 <br>
