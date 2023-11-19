@@ -1,28 +1,28 @@
+import Link from "next/link";
 import InputSignInUp from "../../../commom/components/input-sign-in-up";
 
 export default function SignIn() {
   return (
-    
-      <div class="meio">
-        <form method="post" class="formulario">
-          <h1 class="centro">
-            <strong>Login</strong>
-          </h1>
+    <div class="meio">
+      <form method="post" class="formulario">
+        <h1 class="centro">
+          <strong>Login</strong>
+        </h1>
 
-          <InputSignInUp size="24" type="user" />
+        <InputSignInUp size="24" type="user" />
 
-          <InputSignInUp size="24" type="password" />
+        <InputSignInUp size="24" type="senha" />
 
-          <input type="submit" value="Entrar" class="botão" />
+        <button className="mt-3 botão">Entrar</button>
 
-          <a href="/" class="alinhado1">
-            Esqueceu sua senha?
-          </a>
+        <Link href="/" className="link alinhado1">
+          Esqueceu sua senha?
+        </Link>
 
-          <a href="/" class="alinhado2">
-            Cadastre-se
-          </a>
-        </form>
-      </div>
+        <Link href="/sign-up" className="link alinhado2">
+          Cadastre-se
+        </Link>
+      </form>
+    </div>
   );
 }
