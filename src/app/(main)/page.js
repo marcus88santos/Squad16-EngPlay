@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function Home() {
   return (
     <div>
@@ -8,18 +10,18 @@ export default function Home() {
           <input type="radio" name="btn-radio" id="radio3" />
 
           <div class="slide-box primeiro">
-            <img class="img-desktop" src="/slide-1.jpg" alt="slide 1" />
-            <img class="img-mobile" src="/slide-1-mob.jpg" alt="slide 1" />
+            <Image className="img-desktop" src="/slide-1.jpg" alt="slide 1" width='100' height='100' />
+            <Image className="img-mobile" src="/slide-1-mob.jpg" alt="slide 1" width='100' height='100'/>
           </div>
 
           <div class="slide-box">
-            <img class="img-desktop" src="/slide-2.jpg" alt="slide 3" />
-            <img class="img-mobile" src="/slide-2-mob.jpg" alt="slide 1" />
+            <Image class="img-desktop" src="/slide-2.jpg" alt="slide 3" width='100' height='100'/>
+            <Image class="img-mobile" src="/slide-2-mob.jpg" alt="slide 1" width='100' height='100'/>
           </div>
 
           <div class="slide-box">
-            <img class="img-desktop" src="/slide-3.jpg" alt="slide 3" />
-            <img class="img-mobile" src="/slide-3-mob.jpg" alt="slide 3" />
+            <Image class="img-desktop" src="/slide-3.jpg" alt="slide 3" width='100' height='100'/>
+            <Image class="img-mobile" src="/slide-3-mob.jpg" alt="slide 3" width='100' height='100'/>
           </div>
 
           <div class="nav-auto">
