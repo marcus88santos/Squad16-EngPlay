@@ -1,4 +1,6 @@
-export default function Login() {
+import InputSignInUp from "../../../commom/components/input-sign-in-up";
+
+export default function SignIn() {
   return (
     
       <div class="meio">
@@ -7,11 +9,9 @@ export default function Login() {
             <strong>Login</strong>
           </h1>
 
-          <label for="nome">Nome</label>
-          <input type="text" placeholder="Nome do usuário" autofocus="true" />
+          <InputSignInUp size="24" type="user" />
 
-          <label for="senha">Senha</label>
-          <input type="password" placeholder="Senha" />
+          <InputSignInUp size="24" type="password" />
 
           <input type="submit" value="Entrar" class="botão" />
 
