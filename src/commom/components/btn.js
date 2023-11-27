@@ -17,5 +17,5 @@ export default function Btn(props) {
 
   const classeDoBotao = estilos[layout] || estilos["classe-padrao"];
 
-  return <button className={classeDoBotao}>{text}</button>;
+  return <button className={`${classeDoBotao} no-underline`}>{text}</button>;
 }

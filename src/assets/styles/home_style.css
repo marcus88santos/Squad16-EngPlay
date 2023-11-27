@@ -8,6 +8,12 @@ body {
   margin-bottom: 20px;
 }
 
+button:hover,
+a:hover {
+  text-decoration: none;
+  color: #2DC0C7;
+}
+
 .recentes {
   color: #333;
   padding-top: 4em;
