@@ -14,7 +14,7 @@ export default function InputSignInUp(props) {
         alt={"input icon " + type}
         className="mr-4"
       />
-      <input className="w-full px-1 outline-gray-200 rounded" type={type === 'senha' ? 'password' : 'text'} placeholder={placeholder}></input>
+      <input className="w-full px-1 outline-gray-200 rounded pt-0 pb-0" type={type === 'senha' ? 'password' : 'text'} placeholder={placeholder}></input>
     </div>
   );
 }
