@@ -1,7 +1,4 @@
-{
-  /* // Índice da vaga atual */
-}
-let currentIndex = 0;
+let currentIndex = 0; // Índice da vaga atual
 
 function next() {
   const jobListing = document.getElementById("jobListing");

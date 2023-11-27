@@ -1,6 +1,6 @@
-import "../../assets/styles/home.css";
+import "../../assets/styles/home_slider.css";
+import "../../assets/styles/home_style.css";
 import Header from "../../commom/components/header";
-// import Footer from "@/commom/components/footer";
 
 export default function MainLayout({ children }) {
   return (
