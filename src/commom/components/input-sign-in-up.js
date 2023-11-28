@@ -6,7 +6,7 @@ export default function InputSignInUp(props) {
   const placeholder = props.placeholder
 
   return (
-    <div className="bg-white flex flex-row items-center rounded-2xl p-3 m-2 text-cinza text-rg font-semibold border-4 w-96">
+    <div className="bg-white flex flex-row items-center rounded-2xl p-3 m-2 text-cinza- text-rg font-semibold border-4 w-96">
       <Image
         width={size}
         height={size}

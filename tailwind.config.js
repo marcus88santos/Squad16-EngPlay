@@ -12,8 +12,10 @@ module.exports = {
         "azul-escuro": "#0A103F",
         "azul-ciano": "#2DC0C7",
         "vermelho-diferente": "#C13636",
-        "cinza": "#9F9898",
-        "cinza-claro": "#CFD1D7"
+        "cinza-": "#9F9898",
+        "cinza-claro": "#CFD1D7",
+        "laranja-": "#c13636",
+        "laranja-escuro": "#880808",
       },
     },
   },

@@ -1,0 +1,28 @@
+.sobre-nos {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+.sobre-nos>section {
+    max-width: 60%;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: rgba(173, 216, 230,.5)
+}
+
+.sobre-nos>h2 {
+    color: #333;
+}
+
+.sobre-nos>ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sobre-nos>li {
+    margin-bottom: 10px;
+}

@@ -1,3 +1,6 @@
+import Btn from "@/commom/components/btn";
+import Link from "next/link";
+
 export default function Home() {
   return (
     <div>
@@ -57,27 +60,27 @@ export default function Home() {
       </div>
 
       {/* <!-- 5 vagas recentimente publicadas --> */}
-      <div class="Container">
-        <div class="card">
+      <div className="Container child:cursor-pointer ">
+        <Link href='/vagas' class="card">
           <h4 class="exemplos">Engenheiro Civil</h4>
           <p class="descrição">Curitiba-PR </p>
-        </div>
-        <div class="card">
+        </Link>
+        <Link href='/vagas' class="card">
           <h4 class="exemplos">Engenheiro Agrônomo</h4>
           <p class="descrição">Aracaju-SE</p>
-        </div>
-        <div class="card">
+        </Link>
+        <Link href='/vagas' class="card">
           <h4 class="exemplos">Engenheiro de Alimentos</h4>
           <p class="descrição">Salvador-BA</p>
-        </div>
-        <div class="card">
+        </Link>
+        <Link href='/vagas' class="card">
           <h4 class="exemplos">Engenheiro Eletricista </h4>
           <p class="descrição">Laranjeiras-SE</p>
-        </div>
-        <div class="card">
+        </Link>
+        <Link href='/vagas' class="card">
           <h4 class="exemplos">Engenheiro Mecânico</h4>
           <p class="descrição">Maceió-AL</p>
-        </div>
+        </Link>
       </div>
 
       {/* <!-- busca de vagas --> */}
@@ -86,147 +89,15 @@ export default function Home() {
           Encontre a oportunidade perfeita para a sua carreira.
         </p>
 
-        <div class="search-bar">
+        <div className="flex flex-rol items-center justify-center mb-40">
           <input
             type="text"
             placeholder="Digite o cargo, a empresa ou a localização"
-            className="search rounded-xl border-black border-2"
+            className="search rounded-xl border-black border-2 mr-2"
           />
-          <button class="btn-filter">Filtrar Vagas</button>
-        </div>
-
-        <div class="search-btn-container">
-          <button class="btn-search">Buscar Vagas</button>
-        </div>
-      </section>
-      {/* <!-- Vagas de emprego --> */}
-      <section>
-        <div class="container">
-          <h1 class="vaga-1">Vaga para Engenheiro Civil</h1>
-          <p class="job">Empresa: Empresa ABC Engenharia</p>
-          <p class="job">Local: Curitiba-PR</p>
-          <p class="job">Tipo de Contrato: Tempo Integral</p>
-          <p class="job">
-            <strong>Descrição:</strong> Buscamos Engenheiro Civil experiente
-            para gerenciar projetos de construção, supervisionar equipes e
-            garantir padrões de segurança. Requer formação em Engenharia Civil e
-            experiência com gestão de projetos.
-          </p>
-          <p class="job">
-            <strong>Requisitos:</strong> Experiência em gestão de projetos,
-            conhecimento em normas técnicas, habilidade de liderança e formação
-            em Engenharia Civil.
-          </p>
-          <p class="job">
-            <strong>Benefícios:</strong> Plano de saúde, vale-refeição e
-            ambiente de trabalho dinâmico.
-          </p>
-          <a href="#" class="btn-apply">
-            Candidatar-se
-          </a>
-        </div>
-        <div class="container">
-          <h1 class="vaga-1">Vaga para Engenheiro Agrônomo</h1>
-          <p class="job">Empresa: Empresa ABC Engenharia</p>
-          <p class="job">Local: Aracaju-SE</p>
-          <p class="job">Tipo de Contrato: Tempo Integral</p>
-          <p class="job">
-            <strong>Descrição:</strong>Estamos em busca de um Engenheiro
-            Agrônomo para desenvolver estratégias de cultivo, manejo de recursos
-            naturais e promover práticas sustentáveis na agricultura. Requer
-            formação em Engenharia Agronômica e experiência em gestão de
-            propriedades rurais.
-          </p>
-          <p class="job">
-            <strong>Requisitos:</strong> Experiência em manejo de culturas e
-            gestão de propriedade rurais, conhecimento em técnicas de
-            agricultara sustentável , Habilidade de trabalho em equipe .
-          </p>
-          <p class="job">
-            <strong>Benefícios:</strong> Plano de saúde, vale-refeição e
-            ambiente de trabalho dinâmico.
-          </p>
-          <a href="#" class="btn-apply">
-            Candidatar-se
-          </a>
-        </div>
-        <div class="container">
-          <h1 class="vaga-1">Vaga para Engenheiro de Alimentos</h1>
-          <p class="job">Empresa: Indústria Alimentícia XXX</p>
-          <p class="job">Local: Salvador-BA</p>
-          <p class="job">Tipo de Contrato: Tempo Integral</p>
-          <p class="job">
-            <strong>Descrição:</strong>Estamos em busca de um Engenheiro de
-            Alimentos para desenvolver e aprimorar produtos alimentícios,
-            assegurando sua qualidade, segurança e conformidade com
-            regulamentações. Será responsável por coordenar processos de
-            produção, garantindo eficiência e excelência nos padrões de
-            qualidade.
-          </p>
-          <p class="job">
-            <strong>Requisitos:</strong> Formação em Engenharia de Alimentos ou
-            áreas correlatas, Experiência comprovada na indústria
-            alimentícia,Habilidade para coordenar equipes e processos de
-            produção.
-          </p>
-          <p class="job">
-            <strong>Benefícios:</strong> Oferecemos plano de saúde,
-            vale-refeição, oportunidades de crescimento profissional e ambiente
-            colaborativo.
-          </p>
-          <a href="#" class="btn-apply">
-            Candidatar-se
-          </a>
-        </div>
-        <div class="container">
-          <h1 class="vaga-1">Vaga para Engenheiro Eletricista </h1>
-          <p class="job">Empresa: Elétrica ABC</p>
-          <p class="job">Local: Laranjeiras-SE</p>
-          <p class="job">Tipo de Contrato: Tempo Integral</p>
-          <p class="job">
-            <strong>Descrição:</strong> Estamos procurando um Engenheiro
-            Eletricista para liderar projetos elétricos, desde o design até a
-            implementação. Responsabilidades incluem desenvolvimento e
-            supervisão de sistemas elétricos, garantindo eficiência energética e
-            conformidade com normas técnicas.
-          </p>
-          <p class="job">
-            <strong>Requisitos:</strong> Formação em Engenharia Elétrica ou
-            áreas afins,Experiência em projetos elétricos e sistemas de
-            distribuição.
-          </p>
-          <p class="job">
-            <strong>Benefícios:</strong> Plano de saúde, vale-refeição e
-            ambiente de trabalho dinâmico.
-          </p>
-          <a href="#" class="btn-apply">
-            Candidatar-se
-          </a>
-        </div>
-        <div class="container">
-          <h1 class="vaga-1">Vaga para Engenheiro Mecânico</h1>
-          <p class="job">Empresa: Indústria Mecânica ZZZ</p>
-          <p class="job">Local: Maceió-AL</p>
-          <p class="job">Tipo de Contrato: Tempo Integral</p>
-          <p class="job">
-            <strong>Descrição:</strong> Estamos em busca de um Engenheiro
-            Mecânico para desenvolver e implementar soluções em projetos
-            mecânicos, desde o design até a produção. Responsabilidades incluem
-            análise de sistemas, desenvolvimento de protótipos e garantia da
-            eficiência dos processos mecânicos.
-          </p>
-          <p class="job">
-            <strong>Requisitos:</strong> Formação em Engenharia Mecânica ou
-            áreas relacionadas,Conhecimento em softwares de modelagem e
-            simulação.
-          </p>
-          <p class="job">
-            <strong>Benefícios:</strong> Plano de saúde, vale-refeição e
-            ambiente de trabalho dinâmico.
-          </p>
-          <a href="#" class="btn-apply">
-            Candidatar-se
-          </a>
+          <Link href="/vagas">
+            <Btn className="ml-8" layout="buscar-vagas" text="Buscar vagas" />
+          </Link>
         </div>
       </section>
 

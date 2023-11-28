@@ -26,7 +26,7 @@ export default function SignIn() {
         </Link>
 
         <Link
-          href="/sign-up"
+          href="/cadastro"
           className="link alinhado2 hover:font-semibold transition duration-300 hover:scale-105"
         >
           Ainda não faz parte da comunidade? <br />
